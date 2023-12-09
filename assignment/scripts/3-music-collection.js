@@ -30,6 +30,9 @@ console.log(
 );
 console.log(addToCollection(myCollection, "Maneater", "Nelly Furtado", "2008"));
 console.log(addToCollection(myCollection, "Galang", "M.I.A", "2011"));
+console.log(addToCollection(myCollection, "Say it Right", "Nelly Furtado", "2011"));
+console.log(addToCollection(myCollection, "Promiscuous", "Nelly Furtado", "2011"));
+
 console.log(
   addToCollection(
     myCollection,
@@ -48,6 +51,17 @@ function showCollection(collection) {
   }
 }
 showCollection(myCollection);
+
+function findByArtist(collection, artist){
+  const match = [];
+  for(let i = 0; i < collection.length; i++){
+    if(collection[i].artist === collection.artist){
+      match.push(collection[i]);
+    }
+  }
+  return match;
+}
+console.log(findByArtist(myCollection, "Nelly Furtado"));
 
 // PLEASE DO NOT MODIFY THIS. Just leave it down here at the bottom. Think of it
 // as a lil' chunk of friendly code that you don't need to understand right now.
