@@ -55,7 +55,7 @@ showCollection(myCollection);
 function findByArtist(collection, artist){
   const match = [];
   for(let i = 0; i < collection.length; i++){
-    if(collection[i].artist === collection.artist){
+    if(collection[i].artist === artist){
       match.push(collection[i]);
     }
   }
