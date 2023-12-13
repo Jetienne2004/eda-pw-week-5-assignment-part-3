@@ -62,6 +62,7 @@ function findByArtist(collection, artist){
   return match;
 }
 console.log(findByArtist(myCollection, "Nelly Furtado"));
+console.log(findByArtist(myCollection, "Drake"));
 
 // PLEASE DO NOT MODIFY THIS. Just leave it down here at the bottom. Think of it
 // as a lil' chunk of friendly code that you don't need to understand right now.
