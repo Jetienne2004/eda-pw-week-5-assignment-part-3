@@ -8,7 +8,7 @@ function addToCollection(collection, title, artist, yearPublished) {
     artist: artist,
     yearPublished: yearPublished,
   };
-  myCollection.push(record);
+  collection.push(record);
   return record;
 }
 console.log(addToCollection(myCollection, "Disturbia", "Rihanna", "2007"));
